@@ -1,0 +1,38 @@
+.errorbtn
+{
+    width: auto;
+    padding: 20px 18px;
+    background-color: #f44336;
+    alignment: center;
+    margin-left: 570px;
+}
+
+.header{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-decoration-line: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    float: top;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-color: #5658FF;
+}
+
+.finut{
+    text-decoration-line: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    float: top;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}

@@ -1,0 +1,56 @@
+body {
+    background-color: #DEEFF1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    object-fit: cover
+}
+
+/*asa ii bara efectiv*/
+.navbar {
+    overflow: hidden;
+    background-color: #C0D7D9;
+    position: fixed;
+    top: 0;
+    width: 1700px;
+}
+
+/*scrisul din meniu*/
+.navbar a {
+    font-family: "Lucida Console", "Courier New", monospace;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navbar imga {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/*cand ating un meniu*/
+.navbar a:hover {
+    background: #6FCED8;
+    color: black;
+    height: 25px
+}
+
+table, th, td {
+    border:0px solid #1B8B8E;
+}
+
+p{
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 110%;
+    text-align: center;
+}

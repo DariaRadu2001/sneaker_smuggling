@@ -1,0 +1,102 @@
+body {
+    background-color: #DEEFF1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    object-fit: cover
+}
+
+/*asa ii bara efectiv*/
+.navbar {
+    overflow: hidden;
+    background-color: #C0D7D9;
+    position: fixed;
+    top: 0;
+    width: 1700px;
+}
+
+/*scrisul din meniu*/
+.navbar a {
+    font-family: "Lucida Console", "Courier New", monospace;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navbar imga {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/*cand ating un meniu*/
+.navbar a:hover {
+    background: #6FCED8;
+    color: black;
+    height: 35px
+}
+
+table, th, td {
+    padding: 30px;
+    text-align: center;
+    border:1px solid #1B8B8E;
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+}
+
+p{
+    color: darkslategray;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 200%;
+    text-align: center;
+}
+
+.p2{
+    float: left;
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 150%;
+    text-align: left;
+}
+
+.box{
+    padding: 20px;
+    width: 500px;
+    margin: 111px;
+    background-color: white;
+    height: 500px;
+}
+.boxScris{
+    padding: 20px;
+    width: 500px;
+    margin: 100px;
+    background-color: #DEEFF1;
+    height: 500px;
+}
+
+.header{
+    text-decoration-line: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+option{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+
