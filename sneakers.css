@@ -60,3 +60,11 @@ p{
     text-align: center;
 }
 
+.p2{
+    float: left;
+    color: black;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 150%;
+    text-align: left;
+}
+
