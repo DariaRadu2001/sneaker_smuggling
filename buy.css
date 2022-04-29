@@ -1,10 +1,11 @@
-.errorbtn
+.buybtn
 {
     width: auto;
     padding: 20px 18px;
-    background-color: #f44336;
-    alignment: center;
+    background-color: #6FCED8;
     margin-left: 570px;
+    text-align: center;
+
 }
 
 .header{
