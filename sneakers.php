@@ -65,7 +65,6 @@ if(!empty($_GET["action"])) {
     <a href="main.html">Home</a>
     <a href="sneakers.php">Sneakers</a>
     <a href="contact.html">Contact</a>
-    <a href="cos.html"><img src="poze/cart.png" alt="cos" height=30px width=30px style="object-fit: contain"></a>
 </div>
 
 
@@ -76,7 +75,7 @@ if(!empty($_GET["action"])) {
     <br><br><br>
     <br><br><br>
 
-    <div class="txt-heading">Shopping Cart</div>
+    <div class="txt-heading"><img src="poze/cart.png" alt="cos" height=30px width=30px style="object-fit: contain">Shopping Cart</div>
 
     <a id="btnEmpty" href="sneakers.php?action=empty">Empty Cart</a>
     <a id="btnEmpty" href="sneakers.php?action=buy">Buy</a>
@@ -105,7 +104,8 @@ if(!empty($_GET["action"])) {
                     <td style="text-align:right;"><?php echo $item["quantity"]; ?></td>
                     <td  style="text-align:right;"><?php echo "$ ".$item["price"]; ?></td>
                     <td  style="text-align:right;"><?php echo "$ ". number_format($item_price,2); ?></td>
-                    <td style="text-align:center;"><a href="sneakers.php?action=remove&s_id=<?php echo $item["s_id"]; ?>><img src="poze/icon-delete.png" alt="Remove Item" /></a></td>
+                    <td style="text-align:center;"><a href="sneakers.php?action=remove&s_id=<?php echo $item["s_id"]; ?>"><img src="poze/icon-delete.png" alt="Remove Item"/></a></td>
+
                 </tr>
                 <?php
                 $total_quantity += $item["quantity"];

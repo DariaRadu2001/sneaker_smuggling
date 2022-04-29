@@ -100,6 +100,15 @@ p{
 }
 
 .txt-heading {
+
+    font-family: "Lucida Console", "Courier New", monospace;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: 25px;
+
     color: #211a1a;
     border-bottom: 1px solid #E0E0E0;
     overflow: auto;
@@ -139,7 +148,7 @@ p{
     float: left;
     background: #ffffff;
     margin: 30px 30px 0px 0px;
-    border: #E0E0E0 1px solid;
+    border: #E0E0E0 2px solid;
 }
 
 .product-image {
