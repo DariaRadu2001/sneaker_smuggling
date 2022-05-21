@@ -27,7 +27,7 @@ if (isset($_POST['email'])) {
 
         if($parola_db == $parola)
         {
-            header("Location: main.html");
+            header("Location: main.php");
         }
         else
         {

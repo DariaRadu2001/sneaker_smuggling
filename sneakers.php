@@ -62,13 +62,8 @@ if(!empty($_GET["action"])) {
     <title>Sneakers Smuggling</title>
 </head>
 <body>
-
+<br><br><br><br><br><br><br><br>
 <div class="box">
-
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-
     <div class="txt-heading"><img src="poze/cart.png" alt="cos" height=30px width=30px style="object-fit: contain">Shopping Cart</div>
 
     <a id="btnEmpty" href="sneakers.php?action=empty">Empty Cart</a>
@@ -127,6 +122,7 @@ if(!empty($_GET["action"])) {
 
 <div id="product-grid">
     <div class="txt-heading">Products</div>
+    <br><br><br><br><br><br><br>
     <?php
     $product_array = $db_handle->runQuery("SELECT * FROM sneakers ORDER BY s_id ASC");
     if (!empty($product_array)) {

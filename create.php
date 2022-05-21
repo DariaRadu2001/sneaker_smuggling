@@ -24,7 +24,7 @@ if (isset($_POST['email'])) {
         $createStmt->bind_param("ss", $_POST['email'], $parola);
         $createStmt->execute();
         $createStmt->close();
-        header("Location: main.html");
+        header("Location: main.php");
 
     }
 }

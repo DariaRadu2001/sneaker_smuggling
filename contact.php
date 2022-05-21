@@ -1,5 +1,7 @@
 <?php include('header.php'); ?>
 <html>
+<br><br><br><br>
+<br><br><br><br>
 <div class="box">
     <table style="width:50%">
         <tr>
