@@ -1,3 +1,6 @@
+<?php
+include('header.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,52 +13,44 @@
 </head>
 <body>
 
-<div class="navbar">
-    <imga href="main.html"><img src="poze/logo.png" alt="logo" height=110 width=141></imga>
-    <a href="main.html">Home</a>
-    <a href="sneakers.php">Sneakers</a>
-    <a href="contact.html">Contact</a>
-
-</div>
-
 <div class="box">
     <div class="header">
         <h1>Recommendation</h1><br></div>
-        <!--pozele de la recomandate-->
-        <table style="width:100%">
-            <tr>
-                <th>
-                   <a href="s3.html">
-                       <img src="poze/s3.jpg" alt="s3" height=214px width=220px style="object-fit: contain">
-                   </a>
-                </th>
+    <!--pozele de la recomandate-->
+    <table style="width:100%">
+        <tr>
+            <th>
+                <a href="s3.php">
+                    <img src="poze/s3.jpg" alt="s3" height=214px width=220px style="object-fit: contain">
+                </a>
+            </th>
 
-                <td>
-                    <a href="s5.html">
-                        <img src="poze/s5.jpg" alt="s5" height=200px width=220px style="object-fit: contain">
-                    </a>
-                </td>
+            <td>
+                <a href="s5.php">
+                    <img src="poze/s5.jpg" alt="s5" height=200px width=220px style="object-fit: contain">
+                </a>
+            </td>
 
-                <td>
-                    <a href="s4.html">
-                        <img src="poze/s4.jpg" alt="s4" height=174 width=220px style="object-fit: contain">
-                    </a>
-                </td>
+            <td>
+                <a href="s4.php">
+                    <img src="poze/s4.jpg" alt="s4" height=174 width=220px style="object-fit: contain">
+                </a>
+            </td>
 
-                <td>
-                    <a href="s1.html">
-                        <img src="poze/s1.jpg" alt="s1" height=167 width=220px style="object-fit: contain">
-                    </a>
-                </td>
+            <td>
+                <a href="s1.php">
+                    <img src="poze/s1.jpg" alt="s1" height=167 width=220px style="object-fit: contain">
+                </a>
+            </td>
 
-                <td>
-                    <a href="s2.html">
-                        <img src="poze/s2.jpg" alt="s2" height=183 width=220px style="object-fit: contain">
-                    </a>
-                </td>
+            <td>
+                <a href="s2.php">
+                    <img src="poze/s2.jpg" alt="s2" height=183 width=220px style="object-fit: contain">
+                </a>
+            </td>
 
-        </table>
-    </div>
+    </table>
+</div>
 
 <div class="header">
     <h1 style="margin-left: 190px">Photo-shoot Ideas</h1>

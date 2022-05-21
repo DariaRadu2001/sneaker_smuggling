@@ -1,3 +1,5 @@
+<?php include('header.php'); ?>
+
 <?php
 session_start();
 require_once("dbcontroller.php");
@@ -60,14 +62,6 @@ if(!empty($_GET["action"])) {
     <title>Sneakers Smuggling</title>
 </head>
 <body>
-<div class="navbar">
-    <imga href="main.html"><img src="poze/logo.png" alt="logo" height=110 width=141></imga>
-    <a href="main.html">Home</a>
-    <a href="sneakers.php">Sneakers</a>
-    <a href="contact.html">Contact</a>
-</div>
-
-
 
 <div class="box">
 

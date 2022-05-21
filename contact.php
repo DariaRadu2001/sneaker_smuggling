@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="contact.css">
-    <title>Sneakers Smuggling</title>
-</head>
-<body>
-
-<div class="navbar">
-    <imga href="main.html"><img src="poze/logo.png" alt="logo"  height=100px width=100px></imga>
-    <a href="main.html">Home</a>
-    <a href="sneakers.php">Sneakers</a>
-    <a href="contact.html">Contact</a>
-</div>
-<br><br><br><br><br><br>
+<?php include('header.php'); ?>
+<html>
 <div class="box">
     <table style="width:50%">
         <tr>
@@ -32,7 +18,7 @@
             </th>
 
             <td>
-                    <p>online@sneakerssmuggling.ro</p>
+                <p>online@sneakerssmuggling.ro</p>
             </td>
         </tr>
 
@@ -68,5 +54,4 @@
     </table>
 </div>
 
-</body>
 </html>

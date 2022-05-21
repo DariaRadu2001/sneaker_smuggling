@@ -1,3 +1,4 @@
+<?php include('header.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +7,7 @@
     <title>Sneakers Smuggling</title>
 </head>
 <body>
-<div class="navbar">
-    <imga href="main.html"><img src="poze/logo.png" alt="logo" height=110 width=141></imga>
-    <a href="main.html">Home</a>
-    <a href="sneakers.php">Sneakers</a>
-    <a href="contact.html">Contact</a>
-</div>
+
 
 <div class="box" style="float: left">
     <img src="poze/s2.jpg" alt="s2" height=500px width=500px style="object-fit: contain">
@@ -39,7 +35,7 @@
     <p style="text-decoration: underline;">Highlights<br></p>
     <div class="p2">
         &#x25CF Nu am ce zice ca nu au aparut ups<br>
-        </div>
+    </div>
 
 </div>
 

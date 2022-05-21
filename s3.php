@@ -1,3 +1,5 @@
+<?php include('header.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,51 +8,48 @@
     <title>Sneakers Smuggling</title>
 </head>
 <body>
-<div class="navbar">
-    <imga href="main.html"><img src="poze/logo.png" alt="logo" height=110 width=141></imga>
-    <a href="main.html">Home</a>
-    <a href="sneakers.php">Sneakers</a>
-    <a href="contact.html">Contact</a>
-</div>
+
 
 <div class="box" style="float: left">
-    <img src="poze/s4.jpg" alt="s4" height=500px width=500px style="object-fit: contain">
+    <img src="poze/s3.jpg" alt="s3" height=500px width=500px style="object-fit: contain">
 </div>
 
 <div class="boxScris" style="float: left">
     <div class="header">
         <h1>
-            NIKE DUNK LOW Skateboard Sneakers
+            Jordan 1 Retro High Court Purple White
         </h1>
-        <p>900 LEI</p>
+        <p>880 LEI</p>
     </div>
 
     <br>
     <form action="/action_page.php">
         <label for="marime"><div class="p2">Sizes available:</div></label>
         <select name="marime" id="marime">
-            <option value="36">36</option>
-            <option value="37">37</option>
-
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
         </select>
     </form>
 
 
+
     <p style="text-decoration: underline;">Highlights<br></p>
     <div class="p2">
-        &#x25CF black/white<br>
-        &#x25CF leather/rubber<br>
+        &#x25CF court purple/white/black<br>
+        &#x25CF leather<br>
+        &#x25CF colour-block panelled design<br>
+        &#x25CF signature Air Jordan Wings logo<br>
         &#x25CF signature Swoosh logo detail<br>
-        &#x25CF contrasting panel detail<br>
         &#x25CF round toe<br>
-        &#x25CF perforated detailing<br>
         &#x25CF front lace-up fastening<br>
-        &#x25CF branded insole<br>
-        &#x25CF rubber sole<br>
+        &#x25CF logo patch at the tongue<br>
+        &#x25CF perforated detailing<br>
+        &#x25CF ridged rubber sole<br>
+        &#x25CF Release date: April 4th, 2020<br>
         &#x25CF These styles are supplied by a premium sneaker marketplace. Stocking only the most sought-after footwear, they source and curate some of the most hard to find sneakers from around the world.
-         </div>
+    </div>
 
 </div>
-
 </body>
 </html>
