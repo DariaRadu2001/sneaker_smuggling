@@ -27,6 +27,7 @@ if (isset($_POST['email'])) {
 
         if($parola_db == $parola)
         {
+            $_SESSION["client"] = $_POST['email'];
             header("Location: main.php");
         }
         else

@@ -11,44 +11,60 @@ if(!empty($_GET["action"])) {
                 $productByCode = $db_handle->runQuery("SELECT * FROM sneakers WHERE s_id='" . $_GET["s_id"] . "'");
                 $itemArray = array($productByCode[0]["s_id"]=>array('name'=>$productByCode[0]["name"], 'marime'=>$productByCode[0]["marime"], 'quantity'=>$_POST["quantity"], 'price'=>$productByCode[0]["price"], 'image'=>$productByCode[0]["image"]));
 
-                if(!empty($_SESSION["cart_item"])) {
-                    if(in_array($productByCode[0]["s_id"],array_keys($_SESSION["cart_item"]))) {
-                        foreach($_SESSION["cart_item"] as $k => $v) {
-                            if($productByCode[0]["s_id"] == $k) {
-                                if(empty($_SESSION["cart_item"][$k]["quantity"])) {
+                if(!empty($_SESSION["cart_item"]))
+                {
+                    if(in_array($productByCode[0]["s_id"],array_keys($_SESSION["cart_item"])))
+                    {
+                        foreach($_SESSION["cart_item"] as $k => $v)
+                        {
+                            if($productByCode[0]["s_id"] == $k)
+                            {
+                                if(empty($_SESSION["cart_item"][$k]["quantity"]))
+                                {
                                     $_SESSION["cart_item"][$k]["quantity"] = 0;
                                 }
                                 $_SESSION["cart_item"][$k]["quantity"] += $_POST["quantity"];
                             }
                         }
-                    } else {
+                    }
+                    else
+                    {
                         $_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
                     }
-                } else {
+                }
+                else
+                {
                     $_SESSION["cart_item"] = $itemArray;
                 }
             }
             break;
-        case "remove":
-            if(!empty($_SESSION["cart_item"]))
-            {
-                foreach($_SESSION["cart_item"] as $k => $v)
-                {
-                    if($_GET["s_id"] == $k)
-                        unset($_SESSION["cart_item"][$k]);
-                    if(empty($_SESSION["cart_item"]))
-                        unset($_SESSION["cart_item"]);
-                }
-            }
-            break;
+
 
         case "empty":
             unset($_SESSION["cart_item"]);
             break;
 
         case "buy":
-            unset($_SESSION["cart_item"]);
+
             header("Location: buy.html");
+            $mysqli = new mysqli("localhost", "root", "", "sneakers");
+
+            $productByCode = $db_handle->runQuery("SELECT * FROM sneakers WHERE s_id='" . $_GET["s_id"] . "'");
+            if(in_array($productByCode[0]["s_id"],array_keys($_SESSION["cart_item"])))
+            {
+                //imi ia fiecare element din cos
+                foreach($_SESSION["cart_item"] as $k => $v)
+                {
+                    $createStmt = $mysqli->prepare("INSERT INTO buy (email, s_id) VALUES (?, ?)");
+                    $createStmt->bind_param("ss", $_SESSION["client"],$id);
+                    $id = $_SESSION["cart_item"][$k]["name"];
+                    $createStmt->execute();
+
+                }
+                $createStmt->close();
+            }
+
+            unset($_SESSION["cart_item"]);
             break;
     }
 }
@@ -63,7 +79,17 @@ if(!empty($_GET["action"])) {
 </head>
 <body>
 <br><br><br><br><br><br><br><br>
-<div class="box">
+
+<form method="post" action="sneakers.php">
+    <label for="order"><div class="p2">SORT BY PRICE:</div></label>
+    <select name="order" id="order">
+        <option value="ASC"> Low to High </option>
+        <option value="DESC"> High to Low </option>
+    </select>
+    <button type="submit"><div class="btnSort">Sort</div></button>
+</form>
+<br><br><br><br>
+<div>
     <div class="txt-heading"><img src="poze/cart.png" alt="cos" height=30px width=30px style="object-fit: contain">Shopping Cart</div>
 
     <a id="btnEmpty" href="sneakers.php?action=empty">Empty Cart</a>
@@ -80,9 +106,7 @@ if(!empty($_GET["action"])) {
                 <th style="text-align:left;">Size</th>
                 <th style="text-align:right;" width="5%">Quantity</th>
                 <th style="text-align:right;" width="10%">Unit Price</th>
-                <th style="text-align:right;" width="10%">Price</th>
-                <th style="text-align:center;" width="5%">Remove</th>
-            </tr>
+                <th style="text-align:right;" width="10%">Price</th>           </tr>
             <?php
             foreach ($_SESSION["cart_item"] as $item){
                 $item_price = $item["quantity"]*$item["price"];
@@ -93,7 +117,6 @@ if(!empty($_GET["action"])) {
                     <td style="text-align:right;"><?php echo $item["quantity"]; ?></td>
                     <td  style="text-align:right;"><?php echo "$ ".$item["price"]; ?></td>
                     <td  style="text-align:right;"><?php echo "$ ". number_format($item_price,2); ?></td>
-                    <td style="text-align:center;"><a href="sneakers.php?action=remove&s_id=<?php echo $item["s_id"]; ?>"><img src="poze/icon-delete.png" alt="Remove Item"/></a></td>
 
                 </tr>
                 <?php
@@ -124,7 +147,18 @@ if(!empty($_GET["action"])) {
     <div class="txt-heading">Products</div>
     <br><br><br><br><br><br><br>
     <?php
-    $product_array = $db_handle->runQuery("SELECT * FROM sneakers ORDER BY s_id ASC");
+    if (!empty($_POST["order"]))
+    {
+        $order = ($_POST["order"]);
+        if ($order == 'ASC')
+            $product_array = $db_handle->runQuery("SELECT * FROM sneakers ORDER BY price ASC");
+        else
+            $product_array = $db_handle->runQuery("SELECT * FROM sneakers ORDER BY price DESC");
+    }
+    else
+    {
+        $product_array = $db_handle->runQuery("SELECT * FROM sneakers ORDER BY price ASC");
+    }
     if (!empty($product_array)) {
         foreach($product_array as $key=>$value){
             ?>
@@ -135,7 +169,8 @@ if(!empty($_GET["action"])) {
                         <div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
                         <div class="product-price"><?php echo "PRICE: ".$product_array[$key]["price"]."LEI"; ?></div>
                         <?php echo "<br>SIZE: ".$product_array[$key]["marime"]; ?>
-                        <div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+                        <div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" />
+                            <input type="submit" value="Add to Cart" class="btnAddAction" /></div>
                     </div>
                 </form>
             </div>

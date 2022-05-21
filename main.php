@@ -13,6 +13,7 @@
 <body>
 
 <div class="box">
+
     <div class="header">
         <h1>Recommendation</h1><br></div>
     <!--pozele de la recomandate-->
@@ -50,7 +51,7 @@
 
     </table>
 </div>
-
+<br><br><br>
 <div class="header">
     <h1 style="margin-left: 190px">Photo-shoot Ideas</h1>
 </div>

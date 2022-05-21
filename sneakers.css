@@ -88,6 +88,16 @@ p{
     margin: 10px 0;
 }
 
+.btnSort {
+    background-color: #0003FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
 .btnAddAction {
     font-family: "Lucida Console", "Courier New", monospace;
     padding: 5px 10px;
@@ -121,13 +131,6 @@ p{
 
 .clear-float {
     clear: both;
-}
-
-.demo-input-box {
-    font-family: "Lucida Console", "Courier New", monospace;
-    border-radius: 2px;
-    border: #CCC 1px solid;
-    padding: 2px 1px;
 }
 
 .tbl-cart {

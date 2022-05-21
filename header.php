@@ -17,5 +17,12 @@
     <form method="post" action="logout.php">
         <a href="login.php">Log_out</a>
     </form>
+
+    <div align="right">
+    <form method="post" action="search.php">
+        <label for="search"></label><input type="text" placeholder="Enter Name" id="search" name="search" value=""><br><br>
+        <button type="submit"><div class="btn">Search</div></button>
+    </form></div>
+
 </div>
 </html>
