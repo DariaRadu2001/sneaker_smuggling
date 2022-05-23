@@ -1,10 +1,11 @@
 table, th, td {
-    padding: 30px;
+    padding: 0;
     text-align: center;
-    border:1px solid #1B8B8E;
     border-collapse: separate;
-    border-spacing: 15px 50px;
+    border-spacing: 15px 10px;
+    background-color: #1B8B8E;
 }
+
 
 p{
     color: darkslategray;
@@ -23,16 +24,17 @@ p{
 
 .box{
     padding: 20px;
-    width: 500px;
+    width: 10px;
     margin: 111px;
-    background-color: white;
-    height: 500px;
+    background-color: #1B8B8E;
+    height: 10px;
+    box-sizing: border-box;
+
 }
 .boxScris{
     padding: 20px;
     width: 500px;
     margin: 100px;
-    background-color: #DEEFF1;
     height: 500px;
 }
 
@@ -43,6 +45,22 @@ option{
     color: black;
     text-align: center;
     font-size: 15px;
+}
+
+body {
+    background-color: #1B8B8E;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    object-fit: cover
+}
+
+.header
+{
+    color: darkslategray;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 200%;
+    text-align: center;
 }
 
 

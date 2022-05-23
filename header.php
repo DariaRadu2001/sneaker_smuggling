@@ -5,12 +5,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="header.css">
     <title>Sneakers Smuggling</title>
 </head>
 
-<div class="navbar">
-    <imga><img src="poze/logo.png" alt="logo"  height=100px width=100px></imga>
+<div class="topnav">
+
+    <a href="main.php"><div class="logo-image"><img src="poze/logo.png" class="img-fluid" alt="logo"></div></a>
     <a href="main.php">Home</a>
     <a href="sneakers.php">Sneakers</a>
     <a href="contact.php">Contact</a>
@@ -20,9 +21,11 @@
 
     <div align="right">
     <form method="post" action="search.php">
-        <label for="search"></label><input type="text" placeholder="Enter Name" id="search" name="search" value=""><br><br>
-        <button type="submit"><div class="btn">Search</div></button>
+        <label for="search"></label><input type="text" placeholder="Enter Name" id="search" name="search" value=""><br>
+        <button class="button" type="submit">Search</button>
     </form></div>
+
+
 
 </div>
 </html>

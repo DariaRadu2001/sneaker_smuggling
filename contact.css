@@ -1,11 +1,11 @@
 table, th, td {
     padding: 0;
     text-align: center;
-    border:1px solid #DEEFF1;
     border-collapse: separate;
     border-spacing: 15px 10px;
-    background-color: white;
+    background-color: #1B8B8E;
 }
+
 
 p{
     color: black;
@@ -15,7 +15,7 @@ p{
 }
 
 body {
-    background-color: #DEEFF1;
+    background-color: #1B8B8E;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;

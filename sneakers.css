@@ -1,3 +1,14 @@
+.header{
+    text-decoration-line: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin-left: auto;
+    width: 100px;
+}
+
 body {
     background-color: #DEEFF1;
     background-repeat: no-repeat;
@@ -19,18 +30,17 @@ p{
     color: black;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 110%;
-    text-align: center;
-}
-
-.p2{
-    float: left;
-    color: black;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 150%;
     text-align: left;
 }
 
 
+.p2{
+    text-decoration-line: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    float: left;
+    font-size: 25px;
+
+}
 
 .shopping-cart {
     margin: 40px;
@@ -61,54 +71,17 @@ p{
     background-color: #FFFFFF;
 }
 
-.txt-heading {
 
-    font-family: "Lucida Console", "Courier New", monospace;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 40px 20px;
-    text-decoration: none;
-    font-size: 25px;
-
-    color: #211a1a;
-    border-bottom: 1px solid #E0E0E0;
-    overflow: auto;
-}
-
-.btnEmpty {
-    font-family: "Lucida Console", "Courier New", monospace;
-    background-color: blue;
-    border:blue 1px solid;
-    padding: 5px 10px;
-    color: #211a1a;
-    float: right;
-    text-decoration: none;
-    border-radius: 3px;
-    margin: 10px 0;
-}
-
-.btnSort {
-    background-color: #0003FF;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+.button {
+    border-radius: 12px;
+    background-color: #1B8B8E;
     border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-.btnAddAction {
-    font-family: "Lucida Console", "Courier New", monospace;
-    padding: 5px 10px;
-    margin-left: 5px;
-    background-color: deeppink;
-    border: #E0E0E0 1px solid;
-    color: #211a1a;
-    float: right;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
     text-decoration: none;
-    border-radius: 3px;
-    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .product-grid .txt-heading {
@@ -183,4 +156,14 @@ p{
     text-align: center;
     clear: both;
     margin: 38px 0;
+}
+
+.box{
+    background-color:#DEEFF1;
+    width: 5110px;
+    padding: 10px;
+    margin: 1px;
+    text-align: left;
+    float: left;
+
 }

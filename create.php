@@ -1,4 +1,5 @@
 <?php
+session_start();
 $mysqli = new mysqli("localhost", "root", "", "sneakers");
 if (isset($_POST['email'])) {
 
@@ -24,7 +25,7 @@ if (isset($_POST['email'])) {
         $createStmt->bind_param("ss", $_POST['email'], $parola);
         $createStmt->execute();
         $createStmt->close();
-        header("Location: main.php");
+        header("Location: login.php");
 
     }
 }

@@ -15,7 +15,7 @@ $db_handle = new DBController();
 </head>
 <body>
 <div id="product-grid">
-    <div class="txt-heading">Products</div>
+    <div class="header"><h1>Products</h1></div>
     <br><br><br><br><br><br><br>
     <?php
     $suche = $_SESSION["suchen"];

@@ -13,14 +13,12 @@
 </div>
 
 <div class="boxScris" style="float: left">
-    <div class="header">
-        <h1>
-            Nike Air Force 1 '07 PRM "Pastel Reveal" sneakers
-        </h1>
-        <p>800 LEI</p>
-    </div>
 
-    <br>
+        <h4>
+            <p>Nike Air Force 1 '07 PRM "Pastel Reveal" sneakers</p>
+        </h4>
+        <p>800 LEI</p>
+
     <form action="/action_page.php">
         <label for="marime"><div class="p2">Sizes available:</div></label>
         <select name="marime" id="marime">
@@ -49,7 +47,7 @@
         &#x25CF These styles are supplied by a premium sneaker marketplace. Stocking only the most sought-after footwear, they source and curate some of the most hard to find sneakers from around the world.
     </div>
 
-</div>
+</div></div>
 
 
 

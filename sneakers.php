@@ -78,22 +78,27 @@ if(!empty($_GET["action"])) {
     <title>Sneakers Smuggling</title>
 </head>
 <body>
-<br><br><br><br><br><br><br><br>
 
+<div>
 <form method="post" action="sneakers.php">
-    <label for="order"><div class="p2">SORT BY PRICE:</div></label>
+    <br>
+    <label for="order">SORT BY PRICE:</label>
     <select name="order" id="order">
         <option value="ASC"> Low to High </option>
         <option value="DESC"> High to Low </option>
     </select>
-    <button type="submit"><div class="btnSort">Sort</div></button>
+    <button class="button" type="submit">Sort</button>
 </form>
-<br><br><br><br>
-<div>
-    <div class="txt-heading"><img src="poze/cart.png" alt="cos" height=30px width=30px style="object-fit: contain">Shopping Cart</div>
+<br>
+    <div class = "box">
+    <img src="poze/cart.png" alt="cos" height=40px width=30px align="left">
+    <p>Shopping Cart</p>
+    <button class="button" type="button"><a href="sneakers.php?action=empty">Empty Cart</a></button>
+    <button class="button" type="button"><a href="sneakers.php?action=buy">Buy</a></button>
 
-    <a id="btnEmpty" href="sneakers.php?action=empty">Empty Cart</a>
-    <a id="btnEmpty" href="sneakers.php?action=buy">Buy</a>
+    </div>
+
+
     <?php
     if(isset($_SESSION["cart_item"]))
     {
@@ -106,7 +111,8 @@ if(!empty($_GET["action"])) {
                 <th style="text-align:left;">Size</th>
                 <th style="text-align:right;" width="5%">Quantity</th>
                 <th style="text-align:right;" width="10%">Unit Price</th>
-                <th style="text-align:right;" width="10%">Price</th>           </tr>
+                <th style="text-align:right;" width="10%">Price</th>
+            </tr>
             <?php
             foreach ($_SESSION["cart_item"] as $item){
                 $item_price = $item["quantity"]*$item["price"];
@@ -140,12 +146,11 @@ if(!empty($_GET["action"])) {
         <?php
     }
     ?>
-</div>
 
 
 <div id="product-grid">
-    <div class="txt-heading">Products</div>
-    <br><br><br><br><br><br><br>
+    <div class="header"><h3>Products</h3></div>
+    <br><br><br>
     <?php
     if (!empty($_POST["order"]))
     {
@@ -170,7 +175,7 @@ if(!empty($_GET["action"])) {
                         <div class="product-price"><?php echo "PRICE: ".$product_array[$key]["price"]."LEI"; ?></div>
                         <?php echo "<br>SIZE: ".$product_array[$key]["marime"]; ?>
                         <div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" />
-                            <input type="submit" value="Add to Cart" class="btnAddAction" /></div>
+                            <input type="submit" value="Add to Cart" class="button" /></div>
                     </div>
                 </form>
             </div>
@@ -178,4 +183,5 @@ if(!empty($_GET["action"])) {
         }
     }
     ?>
+</div>
 </div>

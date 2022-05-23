@@ -94,7 +94,7 @@ if (isset($_POST['email'])) {
 <div class="container">
     <button type="button" class="createbtn"><div class="finut"><a href="create.php">Create account</a></div></button>
     <button type="button" class="createbtn"><div class="finut"><a href="delete.php">Delete account</a></div></button>
-    <button type="button" class="ciuspass"><div class="finut">Forgot <a href="ciuspass.php">password?</a></div></button>
+    <button type="button" class="ciuspass"><div class="finut"><a href="ciuspass.php">Forgot password?</a></div></button>
 </div>
 
 

@@ -10,7 +10,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Sneakers Smuggling</title>
 </head>
-<body>
 
 <div class="box">
 
@@ -51,12 +50,7 @@
 
     </table>
 </div>
-<br><br><br>
-<div class="header">
-    <h1 style="margin-left: 190px">Photo-shoot Ideas</h1>
-</div>
-
-<br><br><br>
+<br>
 <div class="container">
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -107,7 +101,5 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-</div>
 
-</body>
 </html>

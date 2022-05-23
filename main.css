@@ -6,21 +6,15 @@ body {
     object-fit: cover
 }
 
-.container
-{
-    width: 1700px;
-    height: 100px;
-}
-
 .header{
     text-decoration-line: none;
     font-family: "Lucida Console", "Courier New", monospace;
     float: left;
-    display: block;
     color: #1B8B8E;
     text-align: center;
     font-size: 25px;
     margin-left: auto;
+    width: 100px;
 }
 
 table, th, td {

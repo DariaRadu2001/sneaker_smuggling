@@ -1,7 +1,16 @@
 <?php include('header.php'); ?>
-<html>
-<br><br><br><br>
-<br><br><br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <title>Sneakers Smuggling</title>
+</head>
+<body>
+<br><br>
+
 <div class="box">
     <table style="width:50%">
         <tr>
