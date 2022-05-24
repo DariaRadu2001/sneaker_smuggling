@@ -8,16 +8,16 @@
 </head>
 <body>
 
-<div class="box" style="float: left">
+<div class="box">
     <img src="poze/s1.jpg" alt="s1" height=500px width=500px style="object-fit: contain">
 </div>
 
-<div class="boxScris" style="float: left">
+<div class="boxScris">
 
-        <h4>
-            <p>Nike Air Force 1 '07 PRM "Pastel Reveal" sneakers</p>
-        </h4>
-        <p>800 LEI</p>
+    <h4>
+        <p>Nike Air Force 1 '07 PRM "Pastel Reveal" sneakers</p>
+    </h4>
+    <p>800 LEI</p>
 
     <form action="/action_page.php">
         <label for="marime"><div class="p2">Sizes available:</div></label>
@@ -47,8 +47,7 @@
         &#x25CF These styles are supplied by a premium sneaker marketplace. Stocking only the most sought-after footwear, they source and curate some of the most hard to find sneakers from around the world.
     </div>
 
-</div></div>
-
+</div>
 
 
 

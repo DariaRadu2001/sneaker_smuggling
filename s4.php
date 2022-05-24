@@ -9,19 +9,16 @@
 <body>
 
 
-<div class="box" style="float: left">
+<div class="box" >
     <img src="poze/s4.jpg" alt="s4" height=500px width=500px style="object-fit: contain">
 </div>
 
-<div class="boxScris" style="float: left">
-    <div class="header">
-        <h1>
-            NIKE DUNK LOW Skateboard Sneakers
-        </h1>
+<div class="boxScris" >
+        <h4>
+           <p>NIKE DUNK LOW Skateboard Sneakers</p>
+        </h4>
         <p>900 LEI</p>
-    </div>
 
-    <br>
     <form action="/action_page.php">
         <label for="marime"><div class="p2">Sizes available:</div></label>
         <select name="marime" id="marime">

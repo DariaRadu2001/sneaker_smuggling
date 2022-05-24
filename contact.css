@@ -3,7 +3,7 @@ table, th, td {
     text-align: center;
     border-collapse: separate;
     border-spacing: 15px 10px;
-    background-color: #1B8B8E;
+    background-color: #DEEFF1;
 }
 
 
@@ -15,7 +15,7 @@ p{
 }
 
 body {
-    background-color: #1B8B8E;
+    background-color: #DEEFF1;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;

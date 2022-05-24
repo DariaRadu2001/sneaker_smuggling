@@ -9,19 +9,16 @@
 <body>
 
 
-<div class="box" style="float: left">
+<div class="box" >
     <img src="poze/s2.jpg" alt="s2" height=500px width=500px style="object-fit: contain">
 </div>
 
-<div class="boxScris" style="float: left">
-    <div class="header">
-        <h1>
-            Travis Scott x Air Jordan 1 Low "Reverse Mocha"
-        </h1>
+<div class="boxScris" >
+        <h4>
+           <p>Travis Scott x Air Jordan 1 Low "Reverse Mocha"</p>
+        </h4>
         <p>1000 LEI</p>
-    </div>
 
-    <br>
     <form action="/action_page.php">
         <label for="marime"><div class="p2">Sizes available:</div></label>
         <select name="marime" id="marime">

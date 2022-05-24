@@ -23,19 +23,21 @@ p{
 }
 
 .box{
-    padding: 20px;
-    width: 10px;
-    margin: 111px;
-    background-color: #1B8B8E;
-    height: 10px;
-    box-sizing: border-box;
-
+    float: left;
+    padding: 1px;
+    width: 500px;
+    margin: 100px;
+    background-color: white;
+    height: 500px;
+    border: 15px solid darkslategray;
 }
 .boxScris{
     padding: 20px;
     width: 500px;
-    margin: 100px;
     height: 500px;
+    float: right;
+    margin-right: 200px;
+    margin-top: 50px;
 }
 
 
@@ -48,7 +50,7 @@ option{
 }
 
 body {
-    background-color: #1B8B8E;
+    background-color:  #DEEFF1;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;

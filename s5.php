@@ -10,19 +10,16 @@
 <body>
 
 
-<div class="box" style="float: left">
+<div class="box" >
     <img src="poze/s5.jpg" alt="s5" height=500px width=500px style="object-fit: contain">
 </div>
 
-<div class="boxScris" style="float: left">
-    <div class="header">
-        <h1>
-            Comme Des Garçons Play x Converse
-        </h1>
+<div class="boxScris" >
+        <h4>
+            <p>Comme Des Garçons Play x Converse</p>
+        </h4>
         <p>700 LEI</p>
-    </div>
 
-    <br>
     <form action="/action_page.php">
         <label for="marime"><div class="p2">Sizes available:</div></label>
         <select name="marime" id="marime">

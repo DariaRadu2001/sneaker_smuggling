@@ -171,7 +171,7 @@ if(!empty($_GET["action"])) {
                 <form method="post" action="sneakers.php?action=add&s_id=<?php echo $product_array[$key]["s_id"]; ?>">
                     <div class="product-image"><img src="<?php echo "poze/".$product_array[$key]["image"]; ?>"></div>
                     <div class="product-tile-footer">
-                        <div class="product-title"><?php echo $product_array[$key]["name"]; ?></div>
+                        <div class="product-title"><?php echo $product_array[$key]["name"]; ?></div><br><br>
                         <div class="product-price"><?php echo "PRICE: ".$product_array[$key]["price"]."LEI"; ?></div>
                         <?php echo "<br>SIZE: ".$product_array[$key]["marime"]; ?>
                         <div class="cart-action"><input type="text" class="product-quantity" name="quantity" value="1" size="2" />
